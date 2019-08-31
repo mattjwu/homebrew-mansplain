@@ -19,3 +19,7 @@ def mansplain() -> None:
         print("Well basically, this script takes 1 argument from the command line.")
     man_pipe = Popen(["man", sys.argv[1]], stdout=PIPE)
     _slow_read(man_pipe.communicate()[0].decode("utf-8"))
+
+
+if __name__ == '__main__':
+    mansplain()
