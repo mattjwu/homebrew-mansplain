@@ -1,4 +1,5 @@
 class Mansplain < Formula
+  include Language::Python::Virtualenv
   desc "Basically it explains stuff to you"
   homepage ""
   url "https://github.com/emdoyle/homebrew-mansplain/raw/master/mansplain.tar.gz"
