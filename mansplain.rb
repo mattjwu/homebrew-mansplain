@@ -3,7 +3,7 @@ class Mansplain < Formula
   desc "Basically it explains stuff to you"
   homepage ""
   url "https://github.com/emdoyle/homebrew-mansplain/raw/master/mansplain.tar.gz"
-  sha256 "d88c1c67e1a097c0ff1bf5f645e78cdc1af060236efdd5d48071a785941e33c7"
+  sha256 "35585a14876386089b9b8ef43393511aa57cddb0310791a7a44439b0846f7392"
   version "1"
 
   depends_on "python"
