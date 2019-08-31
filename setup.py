@@ -14,7 +14,7 @@ setup(
     python_requires=">=3.5",
     entry_points={
         "console_scripts": [
-            "mansplain = mansplain",
+            "mansplain = bin.mansplain:mansplain",
         ]
     },
     include_package_data=True,

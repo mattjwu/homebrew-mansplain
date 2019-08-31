@@ -14,13 +14,8 @@ def _slow_read(output) -> None:
             time.sleep(0.01)
 
 
-def mansplain(command: str) -> None:
-    man_pipe = Popen(["man", command], stdout=PIPE)
-    _slow_read(man_pipe.communicate()[0].decode("utf-8"))
-
-
-if __name__ == "__main__":
+def mansplain() -> None:
     if len(sys.argv) != 2:
         print("Well basically, this script takes 1 argument from the command line.")
-
-    mansplain(sys.argv[1])
+    man_pipe = Popen(["man", sys.argv[1]], stdout=PIPE)
+    _slow_read(man_pipe.communicate()[0].decode("utf-8"))
