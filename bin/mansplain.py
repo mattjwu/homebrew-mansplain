@@ -17,6 +17,7 @@ def _slow_read(output) -> None:
 def mansplain() -> None:
     if len(sys.argv) != 2:
         print("Well basically, this script takes 1 argument from the command line.")
+        sys.exit(1)
     man_pipe = Popen(["man", sys.argv[1]], stdout=PIPE)
     _slow_read(man_pipe.communicate()[0].decode("utf-8"))
 
