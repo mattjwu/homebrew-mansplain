@@ -20,7 +20,7 @@ def mansplain(command: str) -> None:
 
 
 if __name__ == "__main__":
-    if len(sys.argv) != 3:
+    if len(sys.argv) != 2:
         print("Well basically, this script takes 1 argument from the command line.")
 
     mansplain(sys.argv[1])
